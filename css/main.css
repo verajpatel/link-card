@@ -2,14 +2,20 @@ html {
   box-sizing: border-box;
   background-color: #f0eee8;
   line-height: 1.5;
+  margin: 0 0 1rem;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
 }
 
-body {
-  margin: 0 0 1rem;
+dd {
+  font-style: italic;
+}
+
+.list {
+  border-top: 2px solid #9a816d;
+  border-bottom: 2px solid #9a816d;
 }
 
 .link-card h2 {
@@ -26,22 +32,33 @@ body {
 }
 
 .link-card dl {
-  font-size: 1rem;
   color: #512200;
 }
 
-.btn {
-  text-align: center;
-  text-decoration: none;
-}
-
 .link-card {
-  padding: .4em .75em .5em;
+  display: block;
+  padding: 1em;
   border: 3px solid #9a816d;
   border-radius: 3px;
   background: #dcd4cd;
+  text-decoration: none;
+  font-size: .875rem;
 }
 
 .link-card:hover {
   background-color: #cabdb2;
+}
+
+.btn {
+  font-size: 1rem;
+  text-align: center;
+  padding: .4em .75em .5em;
+  color: #dcd4cd;
+  display: inline-block;
+  border-radius: 3px;
+  background-color: #9a816d;
+}
+
+.link-card:hover .btn {
+  background-color: #785439;
 }
